@@ -1,0 +1,68 @@
+:root {
+    --white: #FFFFFF;
+    --high-contrast: #333333;
+    --mid-contrast: #666666;
+    --low-contrast: #999999;
+    --primary: #A7F0BA;
+    --secondary: #514DE2;
+    --light-secondary: #7B95FC;
+    --bg: #FCFAF1;
+    --border: #F5EDCD;
+    --header-font: "IBM Plex Mono", monospace;
+    --body-font: "Merriweather", serif;
+    --secondary-font: "Inter", sans-serif;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: var(--high-contrast);
+    font-family: var(--body-font);
+    background-color: var(--white);
+}
+body * {
+    margin-bottom: 0;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+a, button {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.33;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5 {
+    font-family: var(--header-font);
+    line-height: 1.08;
+    font-weight: 500;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 42px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 24px;
+}
+h6 {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.container {
+    max-width: 1650px;
+    padding: 0 50px;
+}
+
+
