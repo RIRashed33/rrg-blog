@@ -70,8 +70,6 @@ h6 {
 
 /* Header Style */
 header.header {
-    position: relative;
-    z-index: 999;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
 }
