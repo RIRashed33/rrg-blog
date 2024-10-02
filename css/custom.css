@@ -37,7 +37,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-family: var(--header-font);
     line-height: 1.08;
     font-weight: 500;
@@ -54,11 +54,14 @@ h3 {
 h4 {
     font-size: 24px;
 }
-h6 {
-    font-family: var(--secondary-font);
-    font-size: 14px;
+h5, h6 {
+    font-size: 16px;
     line-height: 1.5;
+    font-family: var(--secondary-font);
     font-weight: 700;
+}
+h6 {
+    font-size: 14px;
 }
 .container {
     max-width: 1500px;
@@ -67,7 +70,10 @@ h6 {
 
 /* Header Style */
 header.header {
+    position: relative;
+    z-index: 999;
     padding: 16px 0;
+    border-bottom: 1px solid var(--border);
 }
 .site-logo .white {
     display: none;
@@ -96,9 +102,6 @@ header.header {
     font-weight: 500;
     padding: 4px;
     color: var(--high-contrast);
-}
-.mainmenu > ul > li > a:hover {
-    color: var(--primary);
 }
 .magnifying-btn {
     width: 40px;
@@ -144,6 +147,7 @@ header.header {
     padding: 24px 24px 24px 104px;
     outline: none;
     font-weight: 300;
+    background: transparent;
 }
 .search-form-content button {
     position: absolute;
@@ -157,4 +161,48 @@ header.header {
     padding: 24px;
     color: var(--high-contrast);
     font-size: 20px;
+}
+
+/* Footer Style */
+footer.footer {
+    background-color: var(--bg);
+    padding: 96px 0 48px;
+}
+.footer-heading {
+    margin-bottom: 100px;
+}
+ul.popular-question {
+    font-size: 12px;
+    line-height: 1.25;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+ul.popular-question li:not(li:last-child) {
+    margin-bottom: 8px;
+}
+ul.popular-question li a {
+    background-color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: var(--mid-contrast);
+}
+.footer-category ul, .copyright-text p {
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    line-height: 1.6;
+}
+.footer-category ul li a {
+    color: var(--high-contrast);
+}
+.footer-about {
+    max-width: 530px;
+    min-width: 300px;
+}
+.footer-about p {
+    font-size: 21px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 48px;
 }
