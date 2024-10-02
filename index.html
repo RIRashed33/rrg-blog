@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,60 @@
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-auto">
+                    <div class="mobile-header">
+                        <div class="logo-area">
+                            <a href="./index.html" class="site-logo">
+                                <img src="./img/logo-primary.svg" alt="site_logo" class="primary">
+                                <img src="./img/logo-white.svg" alt="site_logo" class="white">
+                            </a>
+                            <span>Building better bodies, one cell at a time.</span>
+                        </div>
+                        <button class="hamburger-btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                            <span>tt</span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg navbar-expand-lg">
+                    <nav class="mainmenu collapse navbar-collapse" id="mainNavbar">
+                        <ul>
+                            <li><a href="#">Intro to Stem Cells</a></li>
+                            <li><a href="#">Treatments & Protocols</a></li>
+                            <li><a href="#">Studies & Research</a></li>
+                            <li><a href="#">Regulations</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <div class="search-content">
+                            <button class="magnifying-btn" data-bs-toggle="modal" data-bs-target="#searchFormModal"><i class="fa-light fa-magnifying-glass"></i></button>
+
+                            <div class="modal fade" id="searchFormModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content search-form-modal">
+                                        <button class="modal-close" data-bs-dismiss="modal"><i class="fa-light fa-xmark-large"></i></button>
+                                        <h3 class="mb-4">Search our site</h3>
+                                        <form>
+                                            <div class="search-form-content">
+                                                <input type="text" name="" placeholder="Search here">
+                                                <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
 
 
@@ -19,4 +72,5 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
