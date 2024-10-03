@@ -140,7 +140,18 @@
     }
 
 }
-
+@media screen and (min-width: 1199px) {
+    .hr::before {
+        content: '';
+        display: block;
+        width: 75px;
+        border-bottom: 1px solid var(--border);
+        position: absolute;
+        top: 0;
+        left: -75px;
+    }
+    
+}
 @media screen and (min-width: 1550px) {
 
     header,

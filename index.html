@@ -7,6 +7,7 @@
     <title>RRG Blog</title>
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:opsz,wght@14..32,100..900&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -72,6 +73,105 @@
         </div>
     </header>
 
+    <main>
+        <section class="featured-post pt-5">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="section-sidebar">
+                        <div class="categories">
+                            <h6>Categories</h6>
+                            <ul class="categories-list">
+                                <li><a href="#">Intro to Stem Cells</a></li>
+                                <li><a href="#">Treatments and Protocols</a></li>
+                                <li><a href="#">Studies & Research</a></li>
+                                <li><a href="#">Regulations</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <span class="hr"></span>
+                        <div class="popular-question">
+                            <h6>Popular Questions</h6>
+                            <ul class="question-list">
+                                <li><a href="#">What are the differences between stem cells and exosomes?</a></li>
+                                <li><a href="#">Are stem cell injections safe?</a></li>
+                                <li><a href="#">How much do treatments cost?</a></li>
+                                <li><a href="#">What is the success rate of stem cell therapy for knees?</a></li>
+                                <li><a href="#">Will insurance cover the cost of exosome treatment?</a></li>
+                                <li><a href="#">Are there any disadvantages to stem cell therapy?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="featured-slider">
+                        <div class="owl-carousel" id="featured_carousel">
+                            <div class="item">
+                                <div class="single-featured-post">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="featured-post-content">
+                                                <div class="post-category">
+                                                    <i class="fa-light fa-user-doctor"></i>
+                                                    <span>Protocols</span>
+                                                </div>
+                                                <h1 class="mb-3">How stem cells are changing the game</h1>
+                                                <p class="mb-4 mb-lg-5">In one recent study, the challenging regimen added 77 days of life after three years. Often, kidney disease can be managed in other ways.</p>
+                                                <div class="author-info small mb-3">
+                                                    <p>Mike Murphy</p>
+                                                    <span>23 Aug 2024</span>
+                                                </div>
+                                                <div class="tags-group">
+                                                    <a href="#">Shoulder</a>
+                                                    <a href="#">Tag</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <a href="#" class="featured-thumb">
+                                                <img src="./img/featured-thumb.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="single-featured-post">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="featured-post-content">
+                                                <div class="featured-category">
+                                                    <i class="fa-light fa-user-doctor"></i>
+                                                    <span>Protocols</span>
+                                                </div>
+                                                <h1>How stem cells are changing the game</h1>
+                                                <p>In one recent study, the challenging regimen added 77 days of life after three years. Often, kidney disease can be managed in other ways.</p>
+                                                <div class="author-info">
+                                                    <h6>Mike Murphy</h6>
+                                                    <p class="small">23 Aug 2024</p>
+                                                </div>
+                                                <div class="tags-group">
+                                                    <a href="#">Shoulder</a>
+                                                    <a href="#">Tag</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <a href="#" class="featured-thumb">
+                                                <img src="./img/featured-thumb.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
 
 
     <footer class="footer">
@@ -88,8 +188,8 @@
             <div class="row mb-5 gy-5 justify-content-between">
                 <div class="col-md col-xl-auto">
                     <div class="footer-popular-question">
-                        <h5 class="mb-4">Popular Questions</h5>
-                        <ul class="popular-question">
+                        <h6 class="mb-4">Popular Questions</h6>
+                        <ul class="question-list">
                             <li><a href="#">What are the differences between stem cells and exosomes?</a></li>
                             <li><a href="#">Are stem cell injections safe?</a></li>
                             <li><a href="#">How much do treatments cost?</a></li>
@@ -101,7 +201,7 @@
                 </div>
                 <div class="col-md-auto">
                     <div class="footer-category">
-                        <h5 class="mb-4">Categories</h5>
+                        <h6 class="mb-4">Categories</h6>
                         <ul>
                             <li><a href="#">News</a></li>
                             <li><a href="#">Research</a></li>
@@ -114,7 +214,7 @@
                 </div>
                 <div class="col-md col-xl-auto">
                     <div class="footer-about">
-                        <h5 class="mb-4">About</h5>
+                        <h6 class="mb-4">About</h6>
                         <p>We’re a clinical-stage biotech research company, here to redefine regenerative solutions for the people that need them most. We are developing placental-derived allogeneic human cell and tissue products.</p>
                         <div class="logo-area">
                             <a href="./index.html" class="site-logo">
@@ -135,6 +235,8 @@
 
 
     <script src="https://kit.fontawesome.com/8328b4f28c.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
