@@ -558,3 +558,41 @@ section.single-post {
     color: var(--high-contrast);
     text-decoration: underline;
 }
+.search-section {
+    padding: 70px 0;
+}
+.search-section .container {
+    max-width: 1100px;
+}
+.search-heading {
+    text-align: center;
+    margin-bottom: 72px;
+}
+.search-heading h4 {
+    color: #4BB266;
+    margin-bottom: 20px;
+}
+.single-search-article {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 45px;
+    color: var(--high-contrast);
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+.search-article-thumb {
+    flex: 1 1 190px;
+}
+.search-article-content {
+    flex: 1 1 calc(100% - 214px);
+}
+.search-article-content .article-date-author {
+    color: #4BB266;
+}
+.search-article-content h5 {
+    margin-bottom: 8px;
+}
+.single-search-article:hover {
+    border-color: var(--border);
+}
