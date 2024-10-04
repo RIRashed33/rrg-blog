@@ -201,7 +201,7 @@ footer.footer {
 .footer-heading {
     margin-bottom: 100px;
 }
-ul.question-list, ul.categories-list, .tags-group {
+ul.question-list, ul.categories-list, .tags-group, .post-category {
     font-size: 12px;
     line-height: 1.25;
     font-family: var(--secondary-font);
@@ -220,6 +220,12 @@ ul.categories-list li a {
     border: 1px solid var(--mid-contrast);
     border-radius: 5px;
     padding: 4px 11px;
+    color: var(--mid-contrast);
+}
+.post-category a {
+    background-color: var(--primary);
+    padding: 5px 16px;
+    border-radius: 15px;
     color: var(--mid-contrast);
 }
 .footer-category ul, .copyright-text p {
@@ -257,7 +263,7 @@ ul.categories-list li a {
     font-weight: 500;
     margin-bottom: 13px;
 }
-.featured-slider {
+.featured-slider, .single-post-content {
     flex: 2 2 72%;
     overflow: hidden;
 }
@@ -326,6 +332,9 @@ ul.categories-list li a {
     border: 1px solid var(--border);
     border-radius: 15px;
 }
+.category-article-container:not(.category-article-container:last-child){
+    margin-bottom: 35px;
+}
 .category-article-container .single-article {
     flex-basis: calc(calc(100% - 2px) / 3);
 }
@@ -354,7 +363,7 @@ span.vertical-bar {
 .single-article .featured-thumb {
     margin-bottom: 12px;
 }
-.category-articles {
+.category-articles-content {
     border: 1px solid var(--border);
     border-radius: 15px;
     padding: 32px 40px;
@@ -377,4 +386,35 @@ span.vertical-bar {
 }
 .single-category-article h5 {
     margin-bottom: 8px;
+}
+.category-content {
+    margin-bottom: 64px;
+}
+.category-info {
+    max-width: 460px;
+    font-size: 18px;
+}
+.category-info h1 {
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+.category-thumb img {
+    border-radius: 15px;
+}
+.post-info .author-info {
+    margin-bottom: 20px;
+}
+section.single-post {
+    padding: 0;
+}
+.single-post-container {
+    display: flex;
+    align-items: stretch;
+}
+.single-post-container .section-sidebar {
+    padding: 80px 0;
+}
+.single-post-content {
+    border-left: 1px solid var(--border);
+    padding: 80px 0;
 }
